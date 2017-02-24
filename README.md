@@ -56,7 +56,7 @@ Os endpoints disponíveis na aplicação estão listados abaixo. Os classificado
 | Percentage | GET       | /category/{:id}      | ✘         |
     
 ## Critério de avaliação:
-- Sua API deve conter os 3 endpoints listados acima
+- Sua API deve conter os 4 endpoints listados acima
 - Sua API deve retornar **JSON** válidos em qualquer endpoint;
 - Seu projeto deve ter uma suíte de testes automatizados, quanto maior a cobertura melhor;
 - Não é necessário UI;
