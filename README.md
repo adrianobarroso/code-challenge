@@ -21,7 +21,7 @@ O seu teste deve ter um README com os passos necessários para:
 
 ## Instruções
 
-Crie uma (ou mais) branch(es) neste repositório e cria a solução nela. Não temos um prazo de entrega, faça no seu tempo! Se você achar que tem o suficiente para avaliarmos seu trabalho antes mesmo de finalizar, faça uma Pull Request (PR) de volta para a master e nos avise que avaliamos todas as submissões.
+Crie um fork deste repositório (ou, caso prefira, clone ele para um outro repo privado seu), trabalhe nele e nos dê acesso para podermos avaliar a solução. Nosso prazo inicial é de 2 semanas, caso tenha algum problema e dificuldade podemos extender o prazo sem problemas. Se você achar que tem o suficiente para avaliarmos seu trabalho antes mesmo de finalizar, nos avise que avaliamos todas as submissões.
 
 ## Requisitos
 
