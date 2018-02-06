@@ -7,7 +7,7 @@ class Job
     @title = attributes[:title]
     @categoryid = attributes[:categoryid]
     @expiresat = attributes[:expiresat]
-    @status = attributes[:status].nil? ? 'draft' : 'activate'
+    @status = attributes[:status].nil? ? 'draft' : attributes[:status]
   end
 
   def as_json(options={})

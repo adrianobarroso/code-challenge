@@ -8,7 +8,7 @@ class Repository
   end
 
   def check_expire_date(exp_date)
-    Date.parse(exp_date).to_time < Time.now
+    Date.parse(exp_date).to_time > Time.now
   end
 
   def create_job(attributes)
@@ -31,10 +31,11 @@ class Repository
   def load_db
     options = { headers: true, header_converters: :symbol, col_sep: '|'}
     CSV.foreach(@file, options) do |row|
-      @load_db << Job.new(row) if check_expire_date(row[:expiresat])
+      @load_db << Job.new(row)
     end
     cipher = Secret.new
-    @data = cipher.encrypt(@load_db.to_json.to_s)
+    jobs_available = @load_db.select {|j| check_expire_date(j.expiresat)}
+    @data = cipher.encrypt(jobs_available.to_json.to_s)
   end
 
   def write_db
