@@ -35,30 +35,12 @@ puts response.code
 # puts response
 # puts response.code
 
-# puts "Create job"
-#
-# values = {
-#       title: 'teste',
-#       categoryid: 4,
-#       expiresat: '24/11/2018'
-#     }
-#
-# headers = {
-#       :content_type => 'application/json',
-#       :authorization => "Bearer #{JSON.parse(response)['token']}"
-#     }
-#
-# url = 'http://localhost:9292/db'
-# response = RestClient.post(url, values, headers) { |response, request, result| response }
-#
-# puts response
-# puts response.code
-
-
-puts "Activate job partnerid 9574"
+puts "Create job"
 
 values = {
-      id: '9574'
+      title: 'teste',
+      categoryid: 4,
+      expiresat: '24/11/2018'
     }
 
 headers = {
@@ -66,8 +48,26 @@ headers = {
       :authorization => "Bearer #{JSON.parse(response)['token']}"
     }
 
-url = 'http://localhost:9292/db/activate'
+url = 'http://localhost:9292/db'
 response = RestClient.post(url, values, headers) { |response, request, result| response }
 
 puts response
 puts response.code
+
+
+# puts "Activate job partnerid 9574"
+#
+# values = {
+#       id: '9574'
+#     }
+#
+# headers = {
+#       :content_type => 'application/json',
+#       :authorization => "Bearer #{JSON.parse(response)['token']}"
+#     }
+#
+# url = 'http://localhost:9292/db/activate'
+# response = RestClient.post(url, values, headers) { |response, request, result| response }
+#
+# puts response
+# puts response.code
