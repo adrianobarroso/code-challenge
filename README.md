@@ -20,6 +20,16 @@ A suite de testes ainda nao foi desenvolvida.
 
 2. `db.rb`
 
+## Testes
+
+Para os testes foi utilizado Rspec, porém não obtive sucesso na integração das duas aplicações `Public` e `Api`, uma vez que para acessar a Api é preciso fazer autenticação via `/login` da Public.
+
+Para rodar o teste apenas rode o comando:
+
+```
+rspec
+```
+
 ## Endpoints
 
 | Name       | Method    | URL                  | Protected |
