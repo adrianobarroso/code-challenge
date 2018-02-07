@@ -14,6 +14,7 @@ require 'Date'
 require 'csv'
 require 'sinatra'
 require 'rest-client'
+require 'rack/jwt'
 
 Bundler.require(:default, ENV["RACK_ENV"].to_sym)
 
